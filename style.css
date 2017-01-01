@@ -1,0 +1,224 @@
+/*
+Theme Name:         PsychicPurple
+Theme URI:          htto://portfolio.alexidavis.com/psychicpurple
+Description:        A two-column responsive theme in purple and gray.
+Version:            1.0
+Author:             Alexi Davis
+Author URI:         http://portfolio.alexidavis.com
+License:            GNU General Public License v2 or later
+License URI:        http://www.gnu.org/licenses/gpl-2.0.html
+Tags:               blog,featured-images,footer-widgets,grid-layout,photography,right-sidebar,two-columns
+Text Domain:        psychicpurple
+*/
+
+/*-----------------------------------[ RESET ] 
+*/
+* {box-sizing:border-box;}
+
+/*-----------------------------------[ BASIC STYLES ] 
+*/
+html {background:#fff;}
+body {max-width:1020px;width:95%;margin:10px auto 20px;background:#ddd;border-radius:15px;overflow-x:hidden;}
+a {color:#9666f9;}
+a:visited {color:#300093;}
+a:hover {color:#caaafc;}
+img, embed, object, video, svg, iframe {max-width:90%;}
+img, svg {height:auto;}
+
+/*-----------------------------------[ SEARCH BAR ]
+*/
+.search-form{padding:5px;text-align:center;}
+.search-field{padding:5px;}
+.search-submit{padding:5px;text-align:center;}
+
+/*-----------------------------------[ HEADER AND NAVIGATION ]
+*/
+body>header {text-align:center;background:#9666f9;line-height:3em;border-radius:15px;padding-top:15px;margin:0 -15px;}
+body>header h1{margin:0;padding:0;}
+body>header a,body>header a:visited{color:#222;text-decoration:none;3}
+body>header nav{min-height:2em;}
+body>header nav ul{list-style:none;padding:0;margin-top:0;}
+body>header nav li{display:inline-block;padding:0 5px;}
+body>header nav a,body>header nav a:visited{text-decoration:underline;}
+
+/*-----------------------------------[ POSTS ]
+*/
+main{display:inline-block;width:74%;vertical-align:top;}
+main>ul{list-style:none;width:99%;margin:1em auto 0;}
+main>ul>li{display:inline-block;width:30%;margin:0 5px 10px;vertical-align:top;padding-right:5px;}
+main>ul>li img{display:block;margin:0 auto;border-radius:5px;}
+main>ul>li.single{width:100%;}
+
+/*-----------------------------------[ ARCHIVE PAGE POSTS ]
+*/
+@media (min-width:701px) {
+.archive{width:100%;}
+.image{display:inline-block;width:30%;vertical-align:top;}
+.body-of-post{display:inline-block;width:69%;vertical-align:top;}
+.body-of-post h2{text-align:left;}
+}
+.body-of-post footer{text-align:right;}
+
+
+/*-----------------------------------[ SIDEBAR ]
+*/
+aside{display:inline-block;width:25%;vertical-align:top;}
+aside img{display:block;margin:0 auto 10px;border-radius:15px;}
+aside>ul{padding-left:0;padding-right:5px;}
+aside>ul h2{padding-top:0;padding-bottom:0;}
+
+/*-----------------------------------[ FOOTER ]
+*/
+body>footer{border-bottom-left-radius:15px;border-bottom-right-radius:15px;margin:0 auto;width:99%;padding:0 3%;overflow:hidden;}
+body>footer>div{display:inline-block;width:32%;margin:0 auto;vertical-align:top;text-align:center;padding:0 5px;}
+body>footer ul{text-align:left;padding:0 10px;width:100%;}
+
+/*-----------------------------------[ TYPOGRAPHY ]
+*/
+body{font-family:Roboto,Arial,sans-serif;}
+h1,h2{font-family:'Roboto Slab',script,serif;}
+h3,h4,h5,h6{font-family:Righteous,script,serif;}
+h1{font-size:2em;}
+h2{font-size:1.5em;text-align:center;}
+aside h4{text-align:center;}
+h3,h4,h5{font-size:1.3em;}
+h6{font-size:.67em;}
+p,footer li {font-size: 1.1em; line-height: 1.8;}
+small {font-size: 80%;}
+b, strong { font-weight: bold; }
+i, em, dfn { font-style: italic; }
+main>ul>li>footer{text-align:right;}
+body>footer>p{text-align:center;}
+cite{display:block;padding-left:2em;text-indent:-2em;}
+
+/* =WordPress Core
+-------------------------------------------------------------- */
+.alignnone {
+    margin: 5px 20px 20px 0;
+}
+
+.aligncenter,
+div.aligncenter {
+    display: block;
+    margin: 5px auto 5px auto;
+}
+
+.alignright {
+    float:right;
+    margin: 5px 0 20px 20px;
+}
+
+.alignleft {
+    float: left;
+    margin: 5px 20px 20px 0;
+}
+
+a img.alignright {
+    float: right;
+    margin: 5px 0 20px 20px;
+}
+
+a img.alignnone {
+    margin: 5px 20px 20px 0;
+}
+
+a img.alignleft {
+    float: left;
+    margin: 5px 20px 20px 0;
+}
+
+a img.aligncenter {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.wp-caption {
+    background: #fff;
+    border: 1px solid #f0f0f0;
+    max-width: 96%; /* Image does not overflow the content area */
+    padding: 5px 3px 10px;
+    text-align: center;
+}
+
+.wp-caption.alignnone {
+    margin: 5px 20px 20px 0;
+}
+
+.wp-caption.alignleft {
+    margin: 5px 20px 20px 0;
+}
+
+.wp-caption.alignright {
+    margin: 5px 0 20px 20px;
+}
+
+.wp-caption img {
+    border: 0 none;
+    height: auto;
+    margin: 0;
+    max-width: 98.5%;
+    padding: 0;
+    width: auto;
+}
+
+.wp-caption p.wp-caption-text {
+    font-size: 11px;
+    line-height: 17px;
+    margin: 0;
+    padding: 0 4px 5px;
+}
+
+/* Text meant only for screen readers. */
+.screen-reader-text {
+	clip: rect(1px, 1px, 1px, 1px);
+	position: absolute !important;
+        white-space: nowrap;
+	height: 1px;
+	width: 1px;
+	overflow: hidden;
+}
+
+.screen-reader-text:focus {
+	background-color: #f1f1f1;
+	border-radius: 3px;
+	box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+	clip: auto !important;
+	color: #21759b;
+	display: block;
+	font-size: 14px;
+	font-size: 0.875rem;
+	font-weight: bold;
+	height: auto;
+	left: 5px;
+	line-height: normal;
+	padding: 15px 23px 14px;
+	text-decoration: none;
+	top: 5px;
+	width: auto;
+	z-index: 100000; /* Above WP toolbar. */
+}
+.sticky{background: #444;}
+.gallery-caption{font-style:italic;}
+.bypostauthor{background: #444;}
+
+
+/*-----------------------------------[ MOBILE ]
+*/
+@media (max-width:700px){
+body>header {margin:0 -5px;}
+body>header nav li{display:inline-block;padding:5px 10px 5px;}
+main{display:block;width:100%;vertical-align:top;}
+main>ul{padding-left:0;padding-right:10px;}
+main>ul>li{margin:0 5px;vertical-align:top;width:100%;padding:10px 5px 5px;border-bottom:1px #bbb solid;border-top:1px #eee solid;}
+main>ul>li:first-of-type{border-top:0;}
+main>ul>li:last-of-type{border-bottom:0;}
+main>ul>li>img{display:block;margin:0 auto;}
+aside{width:100%;vertical-align:top;}
+aside img{padding-bottom:30px;}
+body>footer div{width:100%}
+body>footer ul{padding-left:10%;}
+}
+@media (min-width:701px) and (max-width:1019px){
+
+}
